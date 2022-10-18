@@ -33,12 +33,44 @@ let a11=10%3; // 1
 console.log(a11);
 document.write(a11);
 
+document.write("</br>")
+
 for (let index1=10; index1<0; index1--){
     document.write(index1);
     console.log(index1);
 }
 
 document.write("good");
+
+
+const calculateArea = (num1,num2) => {
+    console.log(num1*num2);
+}
+console.log(calculateArea(23,66));
+
+
+function calculateArea1(radis){
+    return 3.14*radis*radis;
+}
+console.log(calculateArea1(6));
+
+const calculateCircle = radis => 3.14*radis*radis;
+console.log(calculateCircle(3));
+
+const planetHasWater = planet => 'Earth' || 'Mars' ? true : false;
+
+console.log(planetHasWater('Earth'));
+
+const planetHasWater1 = function (planet){
+    if (planet==='Earth' || planet === 'Mars'){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(planetHasWater1('Earth'));
+console.log(planetHasWater1("Moon"));
+
 
 
 
