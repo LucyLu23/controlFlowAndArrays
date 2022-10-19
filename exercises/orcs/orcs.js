@@ -156,7 +156,12 @@ but static property can be inherited.
         return ['black','blue','red'];
     }
     }
+/*
+this of constructor is applied when instantiating; this in method can be used when calling
+this always limit its scope and this has some variable's character.
+super applied by child-class and inherit the constructor's argument and methods from fatheer-class
 
+*/
 class car111{
     constructor(brand, color, year,miles){
         this.brand=brand;
@@ -182,6 +187,7 @@ class newCar111 extends car111{
 
 const myCar1 = new newCar111('Ford','blue',12,12000);
 console.log(myCar1);
+
 
  
 
